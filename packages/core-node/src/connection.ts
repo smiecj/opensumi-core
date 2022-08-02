@@ -35,6 +35,7 @@ export function createServerConnection2(
     pathMatchOptions: serverAppOpts.pathMatchOptions,
     wsServerOptions: serverAppOpts.wsServerOptions,
   });
+  logger.log(`init websocket prefix: ${webSocketPrefix}`);
 
   // 事件由 connection 的时机来触发
   commonChannelPathHandler.register('RPCService', {
