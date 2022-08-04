@@ -75,7 +75,7 @@ async function createUpdateShellPathPromise(): Promise<void> {
         }
       });
       proc.unref();
-      pid = proc.pid;
+      pid = proc.pid || 0;
     });
     hasSuccess = true;
   } catch (err) {
