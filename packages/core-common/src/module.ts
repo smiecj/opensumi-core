@@ -17,7 +17,7 @@ export interface BackService {
 
 export class BasicModule {
   @Autowired(INJECTOR_TOKEN)
-  protected injector: Injector;
+  public injector: Injector;
   providers?: Provider[];
   backServices?: BackService[];
   frontServices?: FrontService[];
